@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Montserrat";
+  color: #595959;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  padding: 1rem;  
+  border-width: 5px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #B721FF 0%, 
+      #21D4FD 100%
+    ) 1 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #595959;
+}
+
+.container{
+  padding: 0 200px;
+}
+
+@media screen and (max-width: 1024px){
+  .container{
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    padding: 0 70px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .container{
+    padding: 0 15px;
+  }
+}
+
+.container nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  line-height: 30px;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.container nav .logo img{
+  width: 40px;
+  align-self: center;
+}
+
+.container nav .logo{
+  display: flex;
+  
+}
+
+.container nav .logo p{
+  align-self: flex-end;
+  margin-left: 11px;
+}
+
+.container nav a{
+  line-height: 125px;
+}
+
+.center{
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center h1{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 104px;
+  line-height: 0px;
+  color: #111111;
+}
+
+.center p{
+  line-height: 32px;
+}
+
+.center p span{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+}
+button::after {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(266.92deg, #B721FF 4.11%, #21D4FD 97.45%);
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  z-index: -1;
+  transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+button:hover:after {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-radius: 50px;
+}
