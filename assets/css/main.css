@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
+
 *{
   box-sizing: border-box;
 }
@@ -54,7 +56,7 @@ a{
   height: 100px;
   line-height: 30px;
   font-size: 24px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
 }
@@ -75,7 +77,7 @@ a{
 }
 
 .container nav a{
-  line-height: 125px;
+  line-height: 123px;
 }
 
 .center{
@@ -88,12 +90,13 @@ a{
 }
 
 .center h1{
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 104px;
   line-height: 0px;
   color: #111111;
+  white-space: nowrap;
 }
 
 .center p{
@@ -110,7 +113,7 @@ button {
   background: none;
   border: none;
   outline: none;
-  padding: 20px;
+  padding: 15px 25px;
   font-family: "Montserrat", sans-serif;
   position: relative;
   cursor: pointer;
@@ -143,4 +146,74 @@ button:hover:after {
 button:hover{
   color: #fff;
   transition: .2s;
+}
+
+.lights{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.lights img{
+  position: absolute;
+  z-index: -1;
+}
+
+.lights img:nth-child(1){
+  width: 180px;
+  margin: 30vh 0 0 5vw;
+  filter: blur(10px);
+}
+.lights img:nth-child(2){
+  width: 130px;
+  margin: 50vh 0 0 85vw;
+  filter: blur(3px);
+}
+.lights img:nth-child(3){
+  width: 70px;
+  margin: 65vh 0 0 20vw;
+  filter: blur(1px);
+}
+
+
+@media screen and (max-width: 1024px){
+  .lights img:nth-child(2){
+    margin: 50vh 0 0 75vw;
+  }
+}
+
+
+
+@media screen and (max-width: 768px){
+  .center h1{
+    font-size: 65px;
+  }
+  .center p{
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .center p span{
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .container nav{
+    margin-top: -20px;
+  }
+
+  .lights img:nth-child(1){
+    width: 130px;
+    margin: 30vh 0 0 5vw;
+    filter: blur(10px);
+  }
+  .lights img:nth-child(2){
+    width: 80px;
+    margin: 50vh 0 0 75vw;
+    filter: blur(3px);
+  }
+  .lights img:nth-child(3){
+    width: 50px;
+    margin: 80vh 0 0 20vw;
+    filter: blur(1px);
+  }
+  
 }
