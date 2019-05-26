@@ -1,30 +1,50 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Z Studio. Создание сайтов в Кокшетау">
   <title>Z Studio. Создание сайтов в Кокшетау</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="shortcut icon" href="assets/img/z studio alpha.ico" type="image/x-icon">
 </head>
+
 <body>
-    <div id="particles-js"></div>
-  
+  <div id="particles-js"></div>
+
   <div class="container">
     <nav>
       <div class="logo">
         <img src="assets/img/z studio alpha.png" alt="">
         <p>studio</p>
       </div>
-      <a href="">Контакты</a>
+      <a href="javascript:openContacts()">Контакты</a>
     </nav>
 
     <div class="center">
       <h1>Z Studio</h1>
-      <p id="scramble">Делаем сайты в Кокшетау. <br>
-      <span> От 50 000 тенге за 7 дней</span></p>
+      <p>Делаем сайты в Кокшетау. </p>
+
+      <p><span> От 50 000 тенге за 7 дней</span></p>
+      <p id="scramble">Делаем сайты в Кокшетау. </p>
       <button>Заказать услугу</button>
+    </div>
+  </div>
+
+  <div class="contacts" id="contacts">
+    <div class="container">
+        <div class="close" onclick="openContacts()">
+          <img src="assets/img/close.png" alt="">
+        </div>
+        <h2>Контакты</h2>
+        <h3 class="tel"><a href="tel:+77076770752">8 707 677 0752</a></h3>
+        <div class="social">
+          <a href="https://wa.me/77076770752" target="_blank" noopener noreferrer><img src="assets/img/003-whatsapp.svg" alt=""></a>
+          <a href="https://vk.com/szhan" target="_blank" noopener noreferrer><img src="assets/img/001-vk-social-network-logo.svg" alt=""></a>
+          <a href="mailto:arsik0153@gmail.com" target="_blank" noopener noreferrer><img src="assets/img/002-close-envelope.svg" alt=""></a>
+        </div>
     </div>
   </div>
 
@@ -34,8 +54,10 @@
     <img data-parallax="0.005" src="assets/img/lightening.png" alt="">
   </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-<script src="assets/js/particles.min.js"></script>
-<script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="assets/js/particles.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>

@@ -81,8 +81,8 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-'Делаем сайты в Кокшетау.',
 'Полностью с нуля.',
+'Хостинг и домен в подарок.',
 'Индивидуальный дизайн.'];
 
 
@@ -102,5 +102,10 @@ next();
 //particle js
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {
-  console.log('callback - particles.js config loaded');
 });
+
+//contacts
+function openContacts(e) {
+  var element = document.getElementById("contacts");
+  element.classList.toggle("contacts__toggle");
+}
