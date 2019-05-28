@@ -1,3 +1,6 @@
+$(window).on('load', function(){
+  $('.preloader').fadeOut();
+});
 var currentX = '';
 var currentY = '';
 $(document).mousemove(function(e) {
