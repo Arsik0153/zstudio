@@ -19,7 +19,6 @@ body{
       #B721FF 0%, 
       #21D4FD 100%
     ) 1 100%;
-    overflow: hidden !important;
 }
 
 a{
@@ -260,25 +259,22 @@ button:hover{
   background-color: #fff;
   width: calc(100% - 10px);
   height: 100vh;
-  margin-left: -100%;
+  margin-left: 100%;
   transition: .6s cubic-bezier(0.19, 1, 0.22, 1);
   margin-top: calc(-100vh + 95px);
   padding: 30px 10px;
 }
 
-.contacts img{
-  width: 30px;
-}
 
 .contacts__toggle{
   margin-left: 0;
 }
 
-.contacts .close img{
+.close img{
   width: 20px;
 }
 
-.contacts .close{
+.close{
   cursor: pointer;
   float: right;
 }
@@ -286,7 +282,7 @@ button:hover{
 .contacts h2{
   font-weight: 600;
   font-size: 37px;
-  line-height: 200px;
+  margin-bottom: 100px;
 }
 
 .contacts h3{
@@ -295,7 +291,7 @@ button:hover{
  
 }
 
-.contacts img{
+.social img{
   width: 40px;
 }
 .contacts .social{
